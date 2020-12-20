@@ -1,0 +1,327 @@
+@import url(//db.onlinewebfonts.com/c/d9a58a393d946d86051fbd9a0b594d2f?family=Audrey);
+@font-face {font-family: "Audrey"; src: url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.eot"); src: url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.woff") format("woff"), url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.svg#Audrey") format("svg"); } 
+
+
+@font-face {
+    font-family: "myFirstFont";
+    src: url("dubai/Dubai\ Bold.ttf");
+}
+
+.arabic {
+    font-family: "myFirstFont";
+    font-size: 40pt;
+}
+
+.logomove{
+    margin-bottom: -50px; margin-left: 20%; z-index: 5;
+}
+.logomove1{
+    margin-top: 60px;
+    margin-bottom: -50px; margin-left: 20%; z-index: 5;
+}
+.uhplogo {
+width: 300px;
+}
+
+.parallax {
+    background: url("../../static/images/bg3.png") repeat fixed 100%;
+    width: 100%;
+}
+
+
+.shrink {
+    width: 400px;
+}
+
+
+.aldarlog{
+width: 180px;
+}
+
+.caption {
+    font-size: 30pt;
+    font-family: 'Audrey';
+    color: #9E9079;
+}
+
+
+.text {
+    font-size: 15pt;
+    font-family: 'Audrey';
+    color: #9E9079;
+}
+.colsa {
+opacity: 40%;
+}
+.colsa:hover {
+opacity: 1;
+}
+
+.icon {
+    width: 80px;
+    
+}
+
+
+.tree {
+    margin-left:230px;
+    margin-bottom: -170px;
+}
+
+.carousel-inner img {
+    margin: auto;
+  }
+
+  .carousel-control-next,
+.carousel-control-prev, .carousel-indicators{
+    filter: invert(100%);
+}
+
+.icon2 {
+    width: 40px;
+    opacity: 40%;
+}
+.icon2:hover {
+    opacity: 1;
+}
+.carwidth {
+    width:75%;
+}
+.nearby {
+    width: 100%;
+}
+.ame {
+    width: 100%;
+}
+.ame1 {
+    width: 100%;
+}
+.sanctuary {
+    width: 100%;
+}
+.map {
+    width: 100%;
+}
+
+.sancpara{
+    font-size: 17pt; margin-top: 150px; margin-right: 40px; margin-left: 40px;
+}
+.sancpara1{
+    font-size: 17pt; margin-top: 130px; margin-right: 40px; margin-left: 40px;
+}
+
+.amepara {
+margin-top: 90px;
+font-size: 17pt;
+}
+.cultpara {
+    margin-top: 210px;
+    font-size: 17pt;
+    
+}
+
+.amelist {
+font-size: 17pt;
+}
+
+.textbox {
+    color: #707070;
+    font-family: 'Audrey';
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.formm {
+    background-color: #707070;
+}
+
+.picontainer {
+    margin-top: -700px;
+}
+
+.pricevalue{
+    font-size: 50pt;
+}
+
+.npricevalue {
+    margin-top: 40px;
+}
+.bg {
+    margin-top: -100px;
+}
+.imgbtn {
+ margin-top: 180px;
+}
+
+.caption1 {
+    font-size: 20pt;
+    font-family: 'myFirstFont';
+    color: #9E9079;
+}
+
+.padded {
+    padding-left: 400px;
+}
+
+.text1 {
+    font-size: 12pt;
+    font-family: 'myFirstFont';
+    color: #9E9079;
+}
+
+.bringcent{
+    margin-left: 60px;
+}
+.rowcent {
+    margin-left: 100px;
+}
+.submitcenter{
+    margin-left: -40px;
+}
+
+
+@media only screen and (max-width: 500px) {
+    
+
+.logomove{
+margin-left: 30%;
+}
+
+.uhplogo {
+width: 150px;
+}
+    
+    .aldarlog{
+    width: 90px;
+    }
+
+    .shrink {
+        width: 300px;
+    }
+
+    .icon {
+        width: 40px;    
+    }
+    .icon2 {
+        width: 30px;
+    }
+    .tree {
+        margin-left:10px;
+        margin-bottom: -50px;
+    }
+
+    .carwidth {
+    width:100%;
+    }
+    .ame,
+    .sanctuary,
+    .map {
+        width: 100%;
+    }
+    .nearby {
+        width: 100%;
+        margin-top: -80px;
+    }
+    .sancpara{
+        font-size: 10pt; margin-top: 15px; margin-right: 10px; margin-left: 10px;
+    }
+    .sancpara1{
+        font-size: 10pt; margin-top: 15px; margin-right: 10px; margin-left: 10px;
+    }
+    
+    .amepara {
+        margin-top: 10px;
+        font-size: 10pt;
+        }
+        
+        .amelist {
+        font-size: 10pt;
+        }
+        .cultpara {
+          
+                margin-top: 10px;
+                font-size: 10pt;
+    
+        }
+        
+     .cultca {
+         margin-top: 140px;
+     }
+     .formm {
+        background-color: transparent;
+    }
+    .picontainer {
+        margin-top: -200px;
+    }
+    .pricevalue{
+        font-size: 20pt;
+    }
+    .arabic{
+        font-size: 15pt;
+    }
+    .npricevalue {
+        margin-top: 7px;
+        font-size: 10pt;
+    }
+
+    .bg {
+    margin-top: -35px;
+    }
+    .imgbtn {
+    margin-top: 0px;
+    margin-bottom: -80px;
+    }
+    .bringcent {
+        margin-left: 7%;
+    }
+    .ame1 {
+        width: 100%;
+    }
+
+    .colfont{
+        font-size: 8pt;
+    }
+    .rowcent {
+        
+        margin-left: 0px;
+    }
+    .submitcenter{
+        margin-left: -15px;
+    }
+    .padded {
+        padding-left: 0px;
+    }
+    
+}
+
+
+
+.contenedor-slide{
+    height: auto;
+    width: 100%;
+    padding-top: 10px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    
+}
+.carousel{
+    box-shadow: 6px 10px 10px 0px rgba(0, 0, 0, 0.432);
+}
+
+
+.contenedor{
+    
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contenedor h1{
+    font-size: calc(16px + 4vw);
+}
+.input-form{
+    padding: 15px;
+    font-size: calc(12px + 1.5vw);
+}
