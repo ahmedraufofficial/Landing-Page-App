@@ -21,7 +21,7 @@
       </div>
       
       <div class="row">
-      <img class="bg" style="width: 100%; " src="{{url_for('static', filename='/landing/artboard.png')}}">
+      <img class="bg" style="width: 100%;" src="{{url_for('static', filename='/landing/artboard2.png')}}">
       </div>  
     </div>
     <div class="container picontainer" style=" text-align: center;">
@@ -32,61 +32,65 @@
         
       
         <p class="npricevalue" style="font-family: 'myFirstFont';">درهم إماراتي فــــقـــــــط</p>
-        <h1 class="pricevalue" style="color: #9E9079; font-family: 'myFirstFont';">2,750,000</h1>
-          <p class="npricevalue" style="font-family: 'myFirstFont';">تبــدأ منــــ </p>
+        <h1 class="pricevalue" style="color: #9E9079; font-family: 'myFirstFont'; margin-left: 3px; margin-right: 3px;">2,750,000</h1>
+          <p class="npricevalue" style="font-family: 'myFirstFont';"> تبــدأ منــــ </p>
         
       </div>
       <div class="row justify-content-center">
-        <p class="npricevalue" style="font-family: 'myFirstFont';"> فترة حصرية ومحدودة لغاية 31 ديسمبر 2020</p>
+        <p class="npricevalue1" style="font-family: 'myFirstFont'; margin-top: -4px;"> فترة حصرية ومحدودة لغاية 31 ديسمبر 2020</p>
       </div>
       <div class="row justify-content-center imgbtn" >
-        <a href="{{url_for('home')}}" style="text-decoration: none; color: white;font-family: 'myFirstFont';"><p>أنقر هنا للمزيد</p></a>
+        <button onclick=toggle() class="frstbtn"><p>أنقر هنا للمزيد</p></button>
       </div>
     </div>
-    <div class="container" style="margin-top: 140px;">
+    <div class="container aftrimg"  id="toggle">
       <div class="row justify-content-center" >
-        <img class = "shrink" src="{{url_for('static', filename='/images/saadiyat-reserve-logo.png')}}">
+        <img class = "shrink1" src="{{url_for('static', filename='/images/saadiyat-reserve-logo.png')}}">
     </div>
     </div>
-    <div class="container" style="margin-top: 140px;">
+    <div class="container" >
       <div class="row justify-content-center" style="margin-top:80px; margin-bottom: 140px">
-        <div class="col colsa" onclick="serv()" style="text-align: center;" >
-            <img  class="icon" style="margin-bottom: 20px;" src="{{url_for('static', filename='/images/004-customer-service.svg')}}" >
-                <p class="font-family:'Audrey'" style="text-align: center;">الخدمات </p>
-        </div>
-        <div class="col colsa" onclick="exp()" style="text-align: center;">
-            <img class="icon" style="margin-bottom: 20px;" src="{{url_for('static', filename='/images/003-budget.svg')}}" >
-            <p class="font-family:'Audrey'" style="text-align: center;"> التكلفة التقريبية</p>
-        </div>
-        <div class="col colsa" onclick="pro()" style="text-align: center;">
-            <img class="icon" style="margin-bottom: 20px;" src="{{url_for('static', filename='/images/002-target.svg')}}" >
-            <p class="font-family:'Audrey'" style="text-align: center;"> نبذة عن المشروع </p>
-        </div>
-        <div class="col colsa" onclick="our()" style="text-align: center;">
+        
+      
+        
+        <div class="col-2 colsa" onclick="our()" style="text-align: center;">
             <img class="icon" style="margin-bottom: 20px;" src="{{url_for('static', filename='/images/001-email.svg')}}" >
-            <p class="font-family:'Audrey'" style="text-align: center;">العرض</p>
+            <p class="fontext" style="text-align: center;">العرض</p>
         </div>
         
+      <div class="col-2 colsa" onclick="exp()" style="text-align: center;">
+        <img class="icon" style="margin-bottom: 20px;" src="{{url_for('static', filename='/images/003-budget.svg')}}" >
+        <p class="fontext" style="text-align: center;"> التكلفة التقريبية</p>
+    </div>
+    <div class="col-2 colsa" onclick="pro()" style="text-align: center;">
+      <img class="icon" style="margin-bottom: 20px;" src="{{url_for('static', filename='/images/002-target.svg')}}" >
+      <p class="fontext" style="text-align: center;"> نبذة عن المشروع </p>
+  </div>
+  <div class="col-2 colsa" onclick="serv()" style="text-align: center;" >
+    <img  class="icon" style="margin-bottom: 20px;" src="{{url_for('static', filename='/images/004-customer-service.svg')}}" >
+        <p class="fontext" style="text-align: center;">الخدمات </p>
+</div>
+       
     </div>
     </div>
 
-    <div class="container" style="margin-top: 140px;">
+    <div class="container trunkgap" >
       <div class="row tree">
-        <img style="width:200px; opacity: 20%;" src="{{url_for('static', filename='/images/005-trunk.svg')}}" style="z-index: 1;">
+        <img class="trunk" style=" opacity: 20%;" src="{{url_for('static', filename='/images/005-trunk.svg')}}" style="z-index: 1;">
         </div>
         <div class="row justify-content-center" >
              
-            <h1 class = "caption1" style="z-index: 2;">"مشروع أراضي "سعديات ريزيرف</h1>
+            <h1 class = "caption1 whenres" style="z-index: 2;">"مشروع أراضي "سعديات ريزيرف</h1>
         </div>
-        <div class="row justify-content-center"><h1 class="caption1">المطروحة من قبل شركة الدار العقارية</h1></div>
-        <div class="row justify-content-center">
-            <h1 class = "text1" style="text-align: right;">
-              تستطيع الآن و لفترة حصرية ومحدودة بناء منزلك في جزيرة السعديات بأقل التكاليف، هذا هو الوقت الأنسب للبدء بالتنفيذ.  كيف ذلك ؟
+        <div class="row justify-content-center"><h1 class="caption1 whenres">المطروحة من قبل شركة الدار العقارية</h1></div>
+        <div class="row justify-content-center moveup">
+            <h1 class = "text1 whenres" style="text-align: right;">
+              تستطيع الآن و لفترة حصرية ومحدودة بناء منزلك في جزيرة السعديات بأقل التكاليف، هذا هو الوقت الأنسب للبدء بالتنفيذ
               </h1>
         </div>
     </div>
 
-<div class="container" id="serv" style="margin-top: 140px;">
+<div class="container" id="serv" style="margin-top: 10px;">
   <div class="row justify-content-around bringcent">
     
     <div class="col" style="text-align: center; margin-bottom: 20px;"> 
@@ -113,7 +117,7 @@
     </div>
     
 </div>
-<div class="row justify-content-center bringcent" style="margin-top:100px;">
+<div class="row justify-content-center bringcent" style="margin-top:20px;">
   
   <div class="col" style="text-align: center; margin-bottom: 20px;"> 
     <div style="background-color:  #D8D4D5; width: 250px; height: 250px;">
@@ -142,16 +146,17 @@
   
 </div>
 
-<div class="row justify-content-center" style="margin-top:100px;">
+<div class="row justify-content-center" style="margin-top:20px;">
  
-<div style="background-color:  #9E9079; width: 300px; height: 50px; margin-left:-20px; text-align: center;">
-  <h1 style=" font-family: 'myFirstFont'; font-size:14pt; margin-top:10px;  ">إنتهز الفرصة و قم بالتسجيل</h1>
+<div>
+  <button onclick=reg() style="background-color:  #9E9079; width: 300px; height: 50px; text-align: center; font-family: 'myFirstFont'; font-size:14pt; margin-top:10px;  ">إنتهز الفرصة و قم بالتسجيل</button>
+  <img onclick=toggle() src="{{url_for('static', filename='/landing/chevron-up.svg')}}" width="25px" style="margin-left: 15px; cursor: pointer;">
 </div>
 
 </div>
 </div>
 
-<div class="container" style="margin-top: 140px;">
+<div class="container" style="margin-top: 100px;">
 
 <div class="row justify-content-center">
   <h1 style=" font-family: 'myFirstFont'; font-size:20pt; color: #504c4f;"> نبذة عن مشروع أراضي </h1>
@@ -162,7 +167,7 @@
 
 </div>
 
-<div  class="container" id="pro" style="margin-top: 180px;">
+<div  class="container" id="pro" style="margin-top: 20px;">
   <div class="row justify-content-center">
       <div class="col-1"></div>
        <div class="col-md-6 col-xs-1 col-sm-1 col-lg-6">
@@ -178,7 +183,7 @@
   </div>
   </div>
 
-  <div class="container cultca" style="margin-top: 100px;">
+  <div class="container cultca" style="margin-top: 20px;">
     <div class="row justify-content-center">
         <div class="col-1"></div>
         <div class="col-md-4 col-lg-4 col-xs-1 col-sm-1" style="background-color: #707070;">
@@ -195,29 +200,30 @@
 </div>
   </div>
 
-  <div class="container">
+  <div class="container" style="margin-top: -80px;">
     <div class="row justify-content-center">
       <div class="col-5">
-      <img id="amenities" class="ame1" src="{{url_for('static', filename='/images/ame.png')}}">
+      <img id="amenities" class="ame1" src="{{url_for('static', filename='/images/ame2.png')}}">
   </div>
   </div>
-  <div class="row">
-    <div class="col" style="margin-left: 570px; margin-top: -100px;">
-    <label style="background-color: #9E9079; padding: 10px; font-family: 'myFirstFont';">أعرف المزيد</label>
+  <div class="row justify-content-center amebutton" >
+    
+    <button onclick=our() style="background-color: #9E9079; padding: 10px; font-family: 'myFirstFont'; z-index: 100;">أعرف المزيد</button>
+    <img onclick=toggle() src="{{url_for('static', filename='/landing/chevron-up.svg')}}" width="25px" style="margin-left: 15px; cursor: pointer;">
   </div>
   </div>
   </div>
 
   <div class="container" id="exp" style="margin-top: 140px;">
     <div class="row justify-content-center">
-      <h3 style="font-family: 'myFirstFont';">التكلفة المتـــوقعة بالدرهم</h3>
+      <h3 style="font-family: 'myFirstFont'; color: #504c4f; margin-bottom: 50px;">التكلفة المتـــوقعة بالدرهم</h3>
     </div>
-    <div class="row" style="text-align: right; font-family: 'myFirstFont';">
+    <div class="row whenres text2" style="text-align: right; font-family: 'myFirstFont';">
       <p>
         عند اتخاذ قرارك ببناء منزل أحلامك، ليس عليك سوى التواصل معنا لتحديد موعد لاختيار قطعة الأرض المناسبة، و تحديد عدد الغرف و مساحة البناء و التكلفة الإنشائية و المواد المستخدمة لتحديد التكلفة الفعلية و مدة المشروع بالكامل
         </p>
     </div>
-    <div class="row" style="text-align: right;font-family: 'myFirstFont';" >
+    <div class="row whenres text2" style="text-align: right;font-family: 'myFirstFont'; margin-bottom: 50px;" >
       <p>كل هذه العوامل تحدد التكلفة الفعلية، بناء على الدراسة التي أجراها فريق المبيعات والفريق الاستشاري في شركة "يونيك هومز العقارية" فإن بناء فيلا من أربع غرف بمساحة بناء إجمالية لغاية 420 متر مربع تقريبا، باستخدام المواد الإنشائية متوسطة التكلفة على أرض بسعر ( 1,750,000 ) درهم، سيكلفك تقريبا 3 ملايين درهم فقط. الجدول التالي سيلخص كل ذلك</p>
     </div>
     <div class="row justify-content-center">
@@ -225,14 +231,14 @@
         <label class="colfont" style="border: 1px solid #9E9079; padding: 10px; width: 100%; font-family:'myFirstFont'; text-align: center;">0</label>
       </div>
       <div class="col">
-        <label class="colfont" style="background-color: #9E9079; padding: 10px;font-family:'myFirstFont';width: 100%;  text-align: center;">رسوم التسجيل</label>
+        <label class="colfont" style="background-color: #D8D4D5; padding: 10px;font-family:'myFirstFont';width: 100%;  text-align: center;">رسوم التسجيل</label>
       </div>
       
       <div class="col">
-        <label class="colfont" style="border: 1px solid #9E9079; padding: 10px; font-family:'myFirstFont';width: 100%;  text-align: center;">1,825,000</label>
+        <label class="colfont1" style="border: 1px solid #9E9079; padding: 10px; font-family:'myFirstFont';width: 100%;  text-align: center;">1,825,000</label>
       </div>
       <div class="col">
-        <label class="colfont" style="background-color: #9E9079; padding: 10px;font-family:'myFirstFont';width: 100%;  text-align: center;">سعر الأرض</label>
+        <label class="colfont" style="background-color: #D8D4D5; padding: 10px;font-family:'myFirstFont';width: 100%;  text-align: center;">سعر الأرض</label>
       </div>
     </div>
     <div class="row justify-content-center">
@@ -240,48 +246,49 @@
         <label class="colfont" style="border: 1px solid #9E9079; padding: 10px; font-family:'myFirstFont'; width: 100%;  text-align: center;">0</label>
       </div>
       <div class="col">
-        <label class="colfont" style="background-color: #9E9079; padding: 10px;font-family:'myFirstFont';width: 100%;  text-align: center;">العمولات</label>
+        <label class="colfont" style="background-color: #D8D4D5; padding: 10px;font-family:'myFirstFont';width: 100%;  text-align: center;">العمولات</label>
       </div>
       
       <div class="col">
         <label class="colfont" style="border: 1px solid #9E9079; padding: 10px; font-family:'myFirstFont';width: 100%;  text-align: center;">%10</label>
       </div>
       <div class="col">
-        <label class="colfont" style="background-color: #9E9079; padding: 10px;font-family:'myFirstFont';width: 100%;  text-align: center;">الدفعة الأولى</label>
+        <label class="colfont" style="background-color: #D8D4D5; padding: 10px;font-family:'myFirstFont';width: 100%;  text-align: center;">الدفعة الأولى</label>
       </div>
     </div>
     <div class="row justify-content-center">
       <div class="col">
-        <label class="colfont" style="border: 1px solid #9E9079; padding: 10px; font-family:'myFirstFont';width: 100%;  text-align: center;">أعرف المزيد</label>
+        <label class="colfont" style="border: 1px solid #9E9079; padding: 10px; font-family:'myFirstFont';width: 100%;  text-align: center;">% 4</label>
       </div>
       <div class="col">
-        <label class="colfont" style="background-color: #9E9079; padding: 10px;font-family:'myFirstFont';width: 100%;  text-align: center;">الخصم</label>
+        <label class="colfont" style="background-color: #D8D4D5; padding: 10px;font-family:'myFirstFont';width: 100%;  text-align: center;">الخصم</label>
       </div>
       
       <div class="col">
-        <label class="colfont" style="border: 1px solid #9E9079; padding: 10px; font-family:'myFirstFont';width: 100%;  text-align: center;">أعرف المزيد</label>
+        <label class="colfont" style="border: 1px solid #9E9079; padding: 10px; font-family:'myFirstFont';width: 100%;  text-align: center;">0</label>
       </div>
       <div class="col">
-        <label class="colfont" style="background-color: #9E9079; padding: 10px;font-family:'myFirstFont';width: 100%;  text-align: center;">رسوم الخدمات </label>
+        <label class="colfont" style="background-color: #D8D4D5; padding: 10px;font-family:'myFirstFont';width: 100%;  text-align: center;">رسوم الخدمات </label>
       </div>
     </div>
     <div class="row justify-content-center">
       <div class="col">
-        <label class="colfont" style="border: 1px solid #9E9079; padding: 10px; font-family:'myFirstFont';width: 100%;  text-align: center;">أعرف المزيد</label>
+        <label class="colfont1" style="border: 1px solid #9E9079; padding: 10px; font-family:'myFirstFont';width: 100%;  text-align: center;">2,750,000</label>
       </div>
       <div class="col">
-        <label class="colfont" style="background-color: #9E9079; padding: 10px;font-family:'myFirstFont';width: 100%;  text-align: center;">التكلفة ألإجمالية المتوقعة </label>
+        <label class="colfont" style="background-color: #D8D4D5; padding: 10px;font-family:'myFirstFont';width: 100%;  text-align: center;">التكلفة ألإجمالية المتوقعة</label>
       </div>
       
       <div class="col">
-        <label class="colfont" style="border: 1px solid #9E9079; padding: 10px; font-family:'myFirstFont';width: 100%;  text-align: center;">أعرف المزيد</label>
+        <label class="colfont1" style="border: 1px solid #9E9079; padding: 10px; font-family:'myFirstFont';width: 100%;  text-align: center;">1,000,000</label>
       </div>
       <div class="col">
-        <label class="colfont" style="background-color: #9E9079; padding: 10px;font-family:'myFirstFont';width: 100%;  text-align: center;">تكلفة البناء المتوقعة </label>
+        <label class="colfont" style="background-color: #D8D4D5; padding: 10px;font-family:'myFirstFont';width: 100%;  text-align: center;">تكلفة البناء المتوقعة</label>
       </div>
     </div>
     <div class="row justify-content-center" style="margin-top:50px;">
-      <label style="background-color: #9E9079; padding: 10px; font-family: 'myFirstFont';">أحصل على موعد</label>  
+      <button onclick=our() style="background-color: #9E9079; padding: 10px; font-family: 'myFirstFont';">أحصل على موعد</button>  
+      <img onclick=toggle() src="{{url_for('static', filename='/landing/chevron-up.svg')}}" width="25px" style="margin-left: 15px; cursor: pointer;">
     </div>
   </div>
 
@@ -291,9 +298,14 @@
     <h1 style="color: #9E9079; font-family: 'myFirstFont';">حقق حلمك معنا</h1>
   </div>
   <div class="row justify-content-center">
-    <p style="color: #9E9079; font-family: 'myFirstFont';">تعرض شركة يونيك هومز  العقارية كافة الوحدات المتاحة في مشروع "سعديات ريزيرف"  مع توفير كافة الخدمات والدراسات التي اجراءها قسم المبيعات  ، فما هي ؟</p>
+    <p class="whenres" style="color: #9E9079; font-family: 'myFirstFont'; text-align: right;">تعرض شركة يونيك هومز  العقارية كافة الوحدات المتاحة في مشروع "سعديات ريزيرف" مع توفير كافة الخدمات والدراسات اللازمة لتنفيذ المشروع حتى اسلام المفتاح، اختر الخدمة من القائمة</p>
   </div>
-  <form action="{{ url_for('sendform') }}" method="post" style="margin-top: 140px;">
+  
+
+  <form action="{{ url_for('sendform') }}" method="post" style="margin-top: 80px;">
+    <div class="row justify-content-center">
+      <h1 style="color: #9E9079; font-family: 'myFirstFont'; font-size: 20pt; margin-bottom: 10px;">أحتاج إلى</h1>  
+    </div>
   <div class="row justify-content-around bringcent">
     <div class="col" style="text-align: center; margin-bottom: 20px;"> 
       <div style="background-color:  #D8D4D5; width: 250px; height: 250px;">
@@ -318,7 +330,7 @@
     </div>
     
 </div>
-<div class="row justify-content-center bringcent" style="margin-top:100px;">
+<div class="row justify-content-center bringcent" style="margin-top:10px;">
   
   <div class="col" style="text-align: center; margin-bottom: 20px;"> 
     <div style="background-color:  #D8D4D5; width: 250px; height: 250px;">
@@ -343,8 +355,8 @@
   </div>
   
 </div>
-<div class="row justify-content-center" style="margin-bottom:10px">
-  <textarea type="text" name="name1" rows="1" cols="19" class="padded" style="text-align: right;  font-family: 'myFirstFont';" placeholder="الإسم بالكامل" required></textarea>
+<div  class="row justify-content-center" style="margin-bottom:10px">
+  <textarea id="reg" type="text" name="name1" rows="1" cols="19" class="padded" style="text-align: right;  font-family: 'myFirstFont';" placeholder="الإسم بالكامل" required></textarea>
   </div>
   <div class="row justify-content-center" style="margin-bottom:10px">
       <textarea type="text" name="email1" rows="1" cols="19" class="padded" style="text-align: right; font-family: 'myFirstFont';" placeholder="البريد الإلكتروني" required></textarea>
@@ -353,11 +365,11 @@
         <textarea type="text" name="phone1" rows="1" cols="19" class="padded" style="text-align: right; font-family: 'myFirstFont';" placeholder="رقم الهاتف" required></textarea>
         </div>
 
-<div class="row justify-content-center" style="margin-top:100px;">
+<div class="row justify-content-center" style="margin-top:50px;">
  
   <input value="انا مهتم" type="submit" style="background-color: #9e9079;
-                        border: hidden; width: 200px; height: 50px; font-family: 'myFirstFont'; font-size: 20pt; font-weight: bold;">
-
+                        border: hidden; width: 200px; height: 50px; font-family: 'myFirstFont'; font-size: 12pt; font-weight: bold;">
+  <img onclick=toggle() src="{{url_for('static', filename='/landing/chevron-up.svg')}}" width="25px" style="margin-left: 15px; cursor: pointer;">
 
 </div>
 
@@ -382,14 +394,19 @@
       <div class="row">
           <div class="col">
               <h4><u>GET IN TOUCH</u></h4>
-              <p>Office No. 1101 P.O. Box 29204</p>
-              <p>A.D. University Tower, Al Nahyan</p>
-              <p>00971-2-6439099</p>
-              <p>info@uhpae.com</p>
-              <p>www.uhpae.com</p>
+              <ul style="list-style: none;">
+              <li>Office No. 1101 P.O. Box 29204</li>
+              <li>A.D. University Tower, Al Nahyan</li>
+              <li>00971-2-6439099</li>
+              <li>info@uhpae.com</lu>
+              <li>www.uhpae.com</li></ul>
           </div>
           <div class="col">
               <h4><u>FOLLOW US</u></h4>
+              <a href="https://www.instagram.com/invites/contact?i=vc7xzmtdz6jl&utm_content=k8kbr0x">
+              <img src="{{url_for('static', filename='/landing/instagram.svg')}}" style="width: 30px;"></a>
+              <a href="https://www.facebook.com/UHPAE/">
+              <img src="{{url_for('static', filename='/landing/facebook.svg')}}" style="width: 12px; "></a>
           </div>
       </div>
   </div>
@@ -413,6 +430,14 @@
         elmnt.scrollIntoView();
       }
       function our() {
+        var elmnt = document.getElementById("our");
+        elmnt.scrollIntoView();
+      }
+      function toggle() {
+        var elmnt = document.getElementById("toggle");
+        elmnt.scrollIntoView();
+      }
+      function reg() {
         var elmnt = document.getElementById("our");
         elmnt.scrollIntoView();
       }

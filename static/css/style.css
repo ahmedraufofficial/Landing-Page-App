@@ -9,23 +9,27 @@
 
 .arabic {
     font-family: "myFirstFont";
-    font-size: 40pt;
+    font-size: 50pt;
 }
 
 .logomove{
-    margin-bottom: -50px; margin-left: 20%; z-index: 5;
+    margin-bottom: -50px; margin-left: 10%; z-index: 5;
 }
 .logomove1{
-    margin-top: 60px;
-    margin-bottom: -50px; margin-left: 20%; z-index: 5;
+    
+    margin-bottom: -50px; z-index: 5;
+    text-decoration: underline;
+    margin-left: 90%;
+    color: black;
 }
 .uhplogo {
-width: 300px;
+width: 200px;
 }
 
 .parallax {
     background: url("../../static/images/bg3.png") repeat fixed 100%;
     width: 100%;
+    
 }
 
 
@@ -33,6 +37,10 @@ width: 300px;
     width: 400px;
 }
 
+
+.shrink1 {
+    width: 650px;
+}
 
 .aldarlog{
 width: 180px;
@@ -94,7 +102,8 @@ opacity: 1;
     width: 100%;
 }
 .ame1 {
-    width: 100%;
+    width: 950px;
+    margin-left: -250px;
 }
 .sanctuary {
     width: 100%;
@@ -136,7 +145,7 @@ font-size: 17pt;
 }
 
 .picontainer {
-    margin-top: -700px;
+    margin-top: -1200px;
 }
 
 .pricevalue{
@@ -146,17 +155,22 @@ font-size: 17pt;
 .npricevalue {
     margin-top: 40px;
 }
+.npricevalue1 {
+    margin-top: 40px;
+}
 .bg {
     margin-top: -100px;
+    height: 1500px;
 }
 .imgbtn {
- margin-top: 180px;
+ margin-top: 50px;
 }
 
 .caption1 {
     font-size: 20pt;
     font-family: 'myFirstFont';
     color: #9E9079;
+    text-align: right;
 }
 
 .padded {
@@ -167,6 +181,7 @@ font-size: 17pt;
     font-size: 12pt;
     font-family: 'myFirstFont';
     color: #9E9079;
+    margin-top: 140px;
 }
 
 .bringcent{
@@ -179,12 +194,79 @@ font-size: 17pt;
     margin-left: -40px;
 }
 
+.aftrimg{
+    margin-top: 800px;
+}
 
+.fontext
+{
+    font-family: 'myFirstFont';
+}
+
+
+.trunkgap{
+    margin-top: 200px;
+}
+.frstbtn {
+    text-decoration: none; color: black;font-family: 'myFirstFont'; background-color: #9e9079;  height: 30px; width: 110px; 
+}
+.trunk{
+    width:200px;
+}
+.amebutton{
+    margin-top: -70px;
+}
+.payplan{
+    width: 100%;
+}
 @media only screen and (max-width: 500px) {
-    
-
+    .payplan{
+        width: 100%;
+    }
+    .textbox {
+        font-size: 8pt;
+    }
+    .dess {
+        font-size: 12pt;
+    }
+    .text2 {
+        font-size: 9pt;  
+    }
+    .text1 {
+        font-size: 10pt;
+    }
+    .moveup {
+        margin-top: -100px;
+    }
+    .trunk{
+        width:100px;
+    }
+    .frstbtn{
+        height: 20px; width: 90px; font-size: 8pt; margin-top: -40px;
+    }
+    .trunkgap{
+        margin-top: -80px;
+    }
+    .colfont1{
+        font-size: 6pt;
+    }
+    .whenres {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .fontext {
+        font-size: 8pt;
+    }
+    .aftrimg{
+        margin-top: 300px;
+    }
 .logomove{
-margin-left: 30%;
+margin-left: 10%;
+}
+.logomove1{
+    margin-left: 25%;
+    margin-top: 23px;
+    font-size: 8pt;
 }
 
 .uhplogo {
@@ -199,6 +281,10 @@ width: 150px;
         width: 300px;
     }
 
+    .shrink1 {
+        width: 300px;
+    }
+    
     .icon {
         width: 40px;    
     }
@@ -251,32 +337,43 @@ width: 150px;
         background-color: transparent;
     }
     .picontainer {
-        margin-top: -200px;
+        margin-top: -400px;
     }
     .pricevalue{
         font-size: 20pt;
     }
     .arabic{
-        font-size: 15pt;
+        font-size: 12pt;
     }
     .npricevalue {
-        margin-top: 7px;
-        font-size: 10pt;
+        margin-top:17px;
+        font-size: 4pt;
+    }
+    .npricevalue1 {
+        margin-top:17px;
+        font-size: 6pt;
     }
 
     .bg {
     margin-top: -35px;
+    height: 500px;
     }
     .imgbtn {
-    margin-top: 0px;
+    margin-top: 50px;
     margin-bottom: -80px;
     }
     .bringcent {
         margin-left: 7%;
     }
     .ame1 {
-        width: 100%;
+        margin-top: 30px;
+        width: 300px;
+        margin-left: -90px;
     }
+
+.amebutton{
+    margin-top: 10px;
+}
 
     .colfont{
         font-size: 8pt;
@@ -291,6 +388,17 @@ width: 150px;
     .padded {
         padding-left: 0px;
     }
+    .textunderame{
+        margin-top: 30px;
+        margin-left: 120px;
+       }
+    .caption1 {
+        font-size: 12pt;
+    }
+    .caption{
+        margin-left: 20px;
+    }
+    
     
 }
 
