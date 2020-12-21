@@ -17,7 +17,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-    <div style="float: left; margin-top:-20px;"><a href="{{url_for('home')}}" href="default.html"><img src="{{url_for('static', filename='/images/comp_logo.png')}}" class="uhplogo" ></a></div>
+    <div style="float: left; "><a href="{{url_for('home')}}" href="default.html"><img src="{{url_for('static', filename='/images/comp_logo.png')}}" class="uhplogo" ></a></div>
     <div style="float: right; margin-top:40px; margin-right: 10px;"><a style=" background-color: #9D9295; color: white; padding-left: 10px; padding-right: 10px; padding-top: 5px; text-decoration: none; font-family: 'Audrey'; font-size: 20pt;" href="{{url_for('offer')}}">Offer</a></div>
     </div></div></div>
   
@@ -154,7 +154,7 @@
       </div>
       
 
-
+      <div class="container">
     <div class="row justify-content-center" style="margin-top: 140px;">
         <img class = "shrink" src="{{url_for('static', filename='/images/saadiyat-reserve-logo.png')}}">
     </div>
@@ -231,10 +231,8 @@
             </div>
         </div>
     </div>
+    </div>
 
-
-
-</div>
 
 <!--Sanctuary-->
 
@@ -311,7 +309,7 @@
     <div class="col-1"></div>
 </div>
 
-
+</div>
 
 <!--floorplan-->
 <div id="floorplan" class="container" style="margin-top: 140px;">
@@ -345,17 +343,25 @@
 </div>
 
    
-        
+    <div class="container gg" style="margin-top: 100px;">
+      <div class="row">
+        <h3 class="pp">Payment Plan</h3>
+      </div>
+      <div class="row">
+        <h3 class="pp">Price Range</h3>
+      </div>
+      <div class="row">
+        <h3 class="pp">AED 1,750,000 - AED 4,000,000</h3>
+      </div>
+    </div>    
      
         
 
 
-<div class="container" style="margin-top: 80px;">
-  <div class="row justify-content-center">
-    <div class="col">
-  <img id="payment" class="payplan" src="{{url_for('static', filename='/images/paymentplan.png')}}"  >
-</div>
-</div>
+<div class="container-fluid" >
+  
+  <img id="payment" class="payplan" src="{{url_for('static', filename='/images/paymentplan.png')}}">
+
 </div>
 
 <div class="container" style="margin-top: 140px;" >

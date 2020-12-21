@@ -40,28 +40,48 @@ def sendmail():
     email = request.form.get('email')
     name = request.form.get('name')
     phone = request.form.get('phone')
-    #msg = Message('Hey there', recipients=['a.rauf@uhpae.com'])
-    #msg.html = '<b> Some Thing </b>'
-    #mail.send(msg)
+    msg = Message('I have registered', recipients=['bjarrah@uhpae.com'])
+    msg.html = '<b>'+email+'<br>'+name+'<br>'+phone+'</b>'
+    mail.send(msg)
     return redirect(request.referrer)
 
 
 @app.route('/sendform',methods=['POST'])
 def sendform():
+    
+    consultation =''
+    mortgage =''
+    land=''
+    management =''
+    design = ''
+    
     email = request.form.get('email1')
     name = request.form.get('name1')
-    phone = request.form.get('phone1')
+    phone = request.form.get('phone1')    
     construction = request.form.get('need_construction')
+    if construction == None:
+        construction =''
     consultation = request.form.get('need_consultation')
+    if consultation == None:
+        consultation =''
     mortgage = request.form.get('need_mortgage')
+    if mortgage == None:
+        mortgage =''
+
     land = request.form.get('need_land')
+    if land == None:
+        land =''
     management = request.form.get('need_management')
+    if management== None:
+        management =''
     design = request.form.get('need_design')
+    if  design == None:
+        design =''
     print(email + management)
     
-    #msg = Message('Hey there', recipients=['a.rauf@uhpae.com'])
-    #msg.html = '<b> Some Thing </b>'
-    #mail.send(msg)
+    msg = Message('Hello, Im interested and my details are ... ', recipients=['bjarrah@uhpae.com'])
+    msg.html = '<b>'+email+'<br>'+name+'<br>'+phone+'</b>'+'<br>'+construction+'<br>'+consultation+'<br>'+mortgage+'<br>'+land+'<br>'+management+'<br>'+design+'<br>'
+    mail.send(msg)
     return redirect(request.referrer)
 
 if __name__ == '__main__':

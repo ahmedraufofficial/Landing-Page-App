@@ -7,6 +7,9 @@
     src: url("dubai/Dubai\ Bold.ttf");
 }
 
+html {
+    scroll-behavior: smooth
+}
 .arabic {
     font-family: "myFirstFont";
     font-size: 50pt;
@@ -219,7 +222,20 @@ font-size: 17pt;
 .payplan{
     width: 100%;
 }
+.pp{
+    font-family: 'Audrey';color:#9d9295; font-weight: bold;
+}
+.gg{
+    margin-bottom: -100px;
+}
 @media only screen and (max-width: 500px) {
+    .gg {
+        margin-bottom: -10px;
+    }
+    .pp {
+        font-size: 14pt;
+        margin-left: 10px;
+    }
     .payplan{
         width: 100%;
     }
@@ -363,7 +379,7 @@ width: 150px;
     margin-bottom: -80px;
     }
     .bringcent {
-        margin-left: 7%;
+        margin-left: 10%;
     }
     .ame1 {
         margin-top: 30px;
