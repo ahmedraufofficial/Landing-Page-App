@@ -77,7 +77,7 @@ def sendform():
     design = request.form.get('need_design')
     if  design == None:
         design =''
-    print(email + management)
+    
     
     msg = Message('Hello, Im interested and my details are ... ', recipients=['bjarrah@uhpae.com'])
     msg.html = '<b>'+email+'<br>'+name+'<br>'+phone+'</b>'+'<br>'+construction+'<br>'+consultation+'<br>'+mortgage+'<br>'+land+'<br>'+management+'<br>'+design+'<br>'
