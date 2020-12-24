@@ -13,7 +13,94 @@
 
 <body>
 <section class="parallax">
+  <div class="container" id="signup" style=" right: 0; left: 0; display: none; overflow-y:scroll">
+
+    <div class="row justify-content-center popmrgin">
+      <h1 style="color: #9E9079; font-family: 'myFirstFont';">Start Building Your Dream!</h1>
+    </div>
+    
+    <form action="{{ url_for('sendform') }}" method="post" style="margin-top: 40px;">
+      <div class="row justify-content-around sad" style="text-align: center;">
+        <div class="col" style="text-align: center; margin-bottom: 20px;"> 
+          <div class = "poptab">
+          <div class="row"><div class="col" style="text-align: right; margin: 10px;"><input type="checkbox" name='need_construction' value="need_construction"  ></div></div>
+          <img class = "popimg" src="{{url_for('static', filename='/landing/004-architect.svg')}}">
+          <h1 class = "poptext">Construction </h1>
+        </div>
+      </div>
+      <div class="col" style="text-align: center; margin-bottom: 20px;"> 
+        <div class = "poptab">
+          <div class="row"><div class="col" style="text-align: right; margin: 10px;"><input type="checkbox" name='need_consultation' value="need_consultation"  ></div></div>
+          <img class = "popimg" src="{{url_for('static', filename='/landing/003-home.svg')}}">
+          <h1 class = "poptext">Consultation</h1>
+        </div>
+      </div>
+      <div class="col" style="text-align: center; margin-bottom: 20px;"> 
+        <div class = "poptab">
+          <div class="row"><div class="col" style="text-align: right; margin: 10px;"><input type="checkbox" name='need_land' value="need_land"  ></div></div>
+          <img class = "popimg" src="{{url_for('static', filename='/landing/001-credit-card.svg')}}">
+          <h1 class = "poptext">Land Plot</h1>
+        </div>
+      </div>
+      
   
+    
+      <div class="col" style="text-align: center; margin-bottom: 20px;"> 
+        <div class = "poptab">
+        <div class="row"><div class="col" style="text-align: right; margin: 10px;"><input type="checkbox" name='need_mortgage' value="need_mortgage"  ></div></div>
+        <img class = "popimg" src="{{url_for('static', filename='/landing/001-bank.svg')}}">
+        <h1 class = "poptext">Mortgage Facilitation</h1>
+      </div>
+    </div>
+    <div class="col" style="text-align: center; margin-bottom: 20px;"> 
+      <div class = "poptab">
+        <div class="row"><div class="col" style="text-align: right; margin: 10px;"><input type="checkbox" name='need_management' value="need_management"  ></div></div>
+        <img class = "popimg" src="{{url_for('static', filename='/landing/004-registration.svg')}}">  
+        <h1 class = "poptext">Property Management</h1>
+      </div>
+    </div>
+    <div class="col" style="text-align: center; margin-bottom: 20px;"> 
+      <div class = "poptab">
+        <div class="row"><div class="col" style="text-align: right; margin: 10px;"><input type="checkbox" name='need_design' value="need_design"  ></div></div>
+        <img class = "popimg" src="{{url_for('static', filename='/landing/002-sketch.svg')}}">
+        <h1 class = "poptext">Design Services</h1>
+      </div>
+    </div>
+    
+  </div>
+  <div class="row justify-content-center" style="margin-bottom:10px">
+    <textarea type="text" name="name1" rows="1" cols="19" class="padded" style="text-align: right;  font-family: 'myFirstFont';" placeholder="Full Name" required></textarea>
+    </div>
+    <div class="row justify-content-center" style="margin-bottom:10px">
+        <textarea type="text" name="email1" rows="1" cols="19" class="padded" style="text-align: right; font-family: 'myFirstFont';" placeholder="Email" required></textarea>
+        </div>
+        <div class="row justify-content-center" style="margin-bottom:10px">
+          <textarea type="text" name="phone1" rows="1" cols="19" class="padded" style="text-align: right; font-family: 'myFirstFont';" placeholder="Phone Number" required></textarea>
+          </div>
+  
+  <div class="row justify-content-center" style="margin-top:100px;">
+   
+    <input value="I'm Interested" type="submit" style="background-color: #9e9079;
+                          border: hidden; width: 200px; height: 50px; font-family: 'myFirstFont'; font-size: 12pt; font-weight: bold;">
+  
+  
+  </div>
+  
+          
+  </form>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
 
     <div class="container">
       <div class="row">
@@ -87,7 +174,7 @@
     </div>
     </div>
 
-    <div class="container trunkgap" >
+    <div class="container trunkgap" id="oppp" >
       <div class="row tree">
         <img class="trunk" style=" opacity: 20%;" src="{{url_for('static', filename='/images/005-trunk.svg')}}" style="z-index: 1;">
         </div>
@@ -108,7 +195,7 @@
     <div class="col" style="text-align: center; margin-bottom: 20px;"> 
       <div style="background-color:  #D8D4D5; width: 250px; height: 250px;">
         <img style="width:50px; margin-top: 25px;" src="{{url_for('static', filename='/landing/005-region.svg')}}">
-        <h1 style=" font-family: 'myFirstFont'; font-size:14pt; margin-top:20px;  ">Roof and Basement Floors for the First time in Saadiyat Island</h1>
+        <h1 style=" font-family: 'myFirstFont'; font-size:14pt; margin-top:20px; ">Roof and Basement Floors for the First time in Saadiyat Island</h1>
       </div>
     </div>
     <div class="col" style="text-align: center; margin-bottom: 20px;"> 
@@ -159,8 +246,8 @@
 <div class="row justify-content-center" style="margin-top:20px;">
  
 <div >
-  <button onclick=our() style="background-color:  #9E9079; width: 300px; height: 50px; text-align: center; font-family: 'myFirstFont'; font-size:14pt; margin-top:10px;  ">Register Now!</button>
-  <img onclick=toggle() src="{{url_for('static', filename='/landing/chevron-up.svg')}}" width="25px" style="margin-left: 15px; cursor: pointer;">
+  
+  <img onclick=toggle() src="{{url_for('static', filename='/landing/chevron-up.svg')}}" width="25px" style="cursor: pointer;">
 </div>
 
 </div>
@@ -224,8 +311,7 @@
   </div>
   <div class="row justify-content-center amebutton" >
     
-    <button onclick=our() style="background-color: #9E9079; padding: 10px; font-family: 'myFirstFont'; z-index: 100;">Read More</button>
-    <img onclick=toggle() src="{{url_for('static', filename='/landing/chevron-up.svg')}}" width="25px" style="margin-left: 15px; cursor: pointer;">
+    <img onclick=toggle() src="{{url_for('static', filename='/landing/chevron-up.svg')}}" width="25px" style="cursor: pointer; z-index: 500;">
   </div>
   </div>
 
@@ -312,94 +398,14 @@
       
     </div>
     <div class="row justify-content-center" style="margin-top:50px;">
-      <button onclick=our() style="background-color: #9E9079; padding: 10px; font-family: 'myFirstFont';">Book an Appointment</button>  
-      <img onclick=toggle() src="{{url_for('static', filename='/landing/chevron-up.svg')}}" width="25px" style="margin-left: 15px; cursor: pointer;">
+      <img onclick=toggle() src="{{url_for('static', filename='/landing/chevron-up.svg')}}" width="25px" style="cursor: pointer; z-index: 500;">
     </div>
   </div>
 
 
 <div class="container" id="our" style="margin-top: 140px;">
   
-  <div class="row justify-content-center whenres">
-    <h1 style="color: #9E9079; font-family: 'myFirstFont';">Start Building Your Dream!</h1>
-  </div>
-  <div class="row justify-content-center">
-    <p class="whenres dess" style="color: #9E9079; font-family: 'myFirstFont';">“Unique Homes Worldwide Properties - UHP” is offering all the available units in “Saadiyat Reserve”, as well as
-      construction consultation and all related services with very competitive rates, whats provided?</p>
-  </div>
-  <form action="{{ url_for('sendform') }}" method="post" style="margin-top: 20px;">
-    <div class="row justify-content-center">
-      <h1 style="color: #9E9079; font-family: 'myFirstFont'; font-size: 20pt; margin-bottom: 10px;">I need</h1>
-    </div>
-  <div class="row justify-content-around bringcent">
-    <div class="col" style="text-align: center; margin-bottom: 20px;"> 
-      <div style="background-color:  #D8D4D5; width: 250px; height: 250px;">
-        <div class="row"><div class="col" style="text-align: right; margin: 10px;"><input type="checkbox" name='need_construction' value="need_construction" style="width:30px;height:30px;"></div></div>
-        <img style="width:50px; margin-top: 25px;" src="{{url_for('static', filename='/landing/004-architect.svg')}}">
-        <h1 style=" font-family: 'myFirstFont'; font-size:14pt; margin-top:20px;  ">Construction </h1>
-      </div>
-    </div>
-    <div class="col" style="text-align: center; margin-bottom: 20px;"> 
-      <div style="background-color:  #D8D4D5; width: 250px; height: 250px;">
-        <div class="row"><div class="col" style="text-align: right; margin: 10px;"><input type="checkbox" name='need_consultation' value="need_consultation" style="width:30px;height:30px;"></div></div>
-        <img style="width:50px; margin-top: 25px;" src="{{url_for('static', filename='/landing/003-home.svg')}}">
-        <h1 style=" font-family: 'myFirstFont'; font-size:14pt; margin-top:20px; ">Consultation</h1>
-      </div>
-    </div>
-    <div class="col" style="text-align: center; margin-bottom: 20px;"> 
-      <div style="background-color:  #D8D4D5; width: 250px; height: 250px;">
-        <div class="row"><div class="col" style="text-align: right; margin: 10px;"><input type="checkbox" name='need_land' value="need_land" style="width:30px;height:30px;"></div></div>
-        <img style="width:50px; margin-top: 25px;" src="{{url_for('static', filename='/landing/001-credit-card.svg')}}">
-        <h1 style=" font-family: 'myFirstFont'; font-size:14pt; margin-top:20px;  ">Land Plot</h1>
-      </div>
-    </div>
-    
-</div>
-<div class="row justify-content-center bringcent" style="margin-top:20px;">
   
-  <div class="col" style="text-align: center; margin-bottom: 20px;"> 
-    <div style="background-color:  #D8D4D5; width: 250px; height: 250px;">
-      <div class="row"><div class="col" style="text-align: right; margin: 10px;"><input type="checkbox" name='need_mortgage' value="need_mortgage" style="width:30px;height:30px;"></div></div>
-      <img style="width:50px; margin-top: 25px;" src="{{url_for('static', filename='/landing/001-bank.svg')}}">
-      <h1 style=" font-family: 'myFirstFont'; font-size:14pt; margin-top:20px;  ">Mortgage Facilitation</h1>
-    </div>
-  </div>
-  <div class="col" style="text-align: center; margin-bottom: 20px;"> 
-    <div style="background-color:  #D8D4D5; width: 250px; height: 250px;">
-      <div class="row"><div class="col" style="text-align: right; margin: 10px;"><input type="checkbox" name='need_management' value="need_management" style="width:30px;height:30px;"></div></div>
-      <img style="width:50px; margin-top: 25px;" src="{{url_for('static', filename='/landing/004-registration.svg')}}">  
-      <h1 style=" font-family: 'myFirstFont'; font-size:14pt; margin-top:20px;  ">Property Management</h1>
-    </div>
-  </div>
-  <div class="col" style="text-align: center; margin-bottom: 20px;"> 
-    <div style="background-color:  #D8D4D5; width: 250px; height: 250px;">
-      <div class="row"><div class="col" style="text-align: right; margin: 10px;"><input type="checkbox" name='need_design' value="need_design" style="width:30px;height:30px;"></div></div>
-      <img style="width:50px; margin-top: 25px;" src="{{url_for('static', filename='/landing/002-sketch.svg')}}">
-      <h1 style=" font-family: 'myFirstFont'; font-size:14pt; margin-top:20px;  ">Design Services</h1>
-    </div>
-  </div>
-  
-</div>
-<div class="row justify-content-center" style="margin-bottom:10px">
-  <textarea type="text" name="name1" rows="1" cols="19" class="padded" style="text-align: right;  font-family: 'myFirstFont';" placeholder="Full Name" required></textarea>
-  </div>
-  <div class="row justify-content-center" style="margin-bottom:10px">
-      <textarea type="text" name="email1" rows="1" cols="19" class="padded" style="text-align: right; font-family: 'myFirstFont';" placeholder="Email" required></textarea>
-      </div>
-      <div class="row justify-content-center" style="margin-bottom:10px">
-        <textarea type="text" name="phone1" rows="1" cols="19" class="padded" style="text-align: right; font-family: 'myFirstFont';" placeholder="Phone Number" required></textarea>
-        </div>
-
-<div class="row justify-content-center" style="margin-top:100px;">
- 
-  <input value="I'm Interested" type="submit" style="background-color: #9e9079;
-                        border: hidden; width: 200px; height: 50px; font-family: 'myFirstFont'; font-size: 12pt; font-weight: bold;">
-
-
-</div>
-
-        
-</form>
 </div>
 
 
@@ -461,6 +467,25 @@
       function toggle() {
         var elmnt = document.getElementById("toggle");
         elmnt.scrollIntoView();
+      }
+
+
+      var someElement = document.getElementById("oppp");
+
+      $(window).scroll(function() {
+        var x = document.getElementById("signup");
+        if (someElement.getBoundingClientRect().top <= 0) {
+        if (sessionStorage.getItem('#signup') !== 'true'){
+        x.style.display = "block" ;
+        sessionStorage.setItem('#signup', 'true') }
+        } 
+      });
+
+
+        function hidepop() {
+        document.getElementById("signup").removeEventListener()
+        x.style.display = "none" 
+        
       }
      
 </script>

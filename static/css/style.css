@@ -1,6 +1,17 @@
 @import url(//db.onlinewebfonts.com/c/d9a58a393d946d86051fbd9a0b594d2f?family=Audrey);
 @font-face {font-family: "Audrey"; src: url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.eot"); src: url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.woff") format("woff"), url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d9a58a393d946d86051fbd9a0b594d2f.svg#Audrey") format("svg"); } 
 
+#signup {
+    position: fixed;
+    z-index:1000;
+    width: 100%;
+    background-color: rgba(255,255,255,0.95);
+    height: 100%;
+  }
+  
+
+
+
 
 @font-face {
     font-family: "myFirstFont";
@@ -148,7 +159,7 @@ font-size: 17pt;
 }
 
 .picontainer {
-    margin-top: -1200px;
+    margin-top: -1300px;
 }
 
 .pricevalue{
@@ -187,9 +198,6 @@ font-size: 17pt;
     margin-top: 140px;
 }
 
-.bringcent{
-    margin-left: 60px;
-}
 .rowcent {
     margin-left: 100px;
 }
@@ -228,7 +236,46 @@ font-size: 17pt;
 .gg{
     margin-bottom: -100px;
 }
+.popimg {
+    width:35px; margin-top: -60px; 
+}
+.poptext{
+    font-family: 'myFirstFont'; font-size:10pt; margin-top:-15px;
+}
+.poptab{
+    background-color:  #D8D4D5; width: 150px; height: 80px;
+}
+
+.popmrgin{
+    margin-top: 100px;
+}
+.bringcent {
+    margin-left: 6%;
+}
 @media only screen and (max-width: 500px) {
+    .popmrgin{
+        margin-top: 20px;
+    }
+    .sad {
+        margin-left: 18px;
+    }
+
+    .bringcent {
+        margin-left: 7%;
+    }
+    .popimg{
+        width: 20px;
+    }
+    .poptext{
+        margin-top: -25px;
+        font-size: 8pt;
+    }
+
+    .poptab{
+        width: 100px;
+        height: 60px;
+    }
+
     .gg {
         margin-bottom: -10px;
     }
@@ -378,9 +425,7 @@ width: 150px;
     margin-top: 50px;
     margin-bottom: -80px;
     }
-    .bringcent {
-        margin-left: 10%;
-    }
+    
     .ame1 {
         margin-top: 30px;
         width: 300px;
